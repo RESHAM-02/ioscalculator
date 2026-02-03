@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOS Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+            <div class="result" id="calculations">0</div>
+        </div>
+
+        <div class="numpad">
+            <button class="key gray" onclick="removeLast()"><i class="fa-solid fa-delete-left"></i></button>
+            <button class="key gray" onclick="reset()">AC</button>
+            <button class="key gray" onclick="display('/100')">%</button>
+            <button class="key green" onclick="display('/')">&divide</button>
+            <button class="key black" onclick="display('7')">7</button>
+            <button class="key black" onclick="display('8')">8</but[ton>
+            <button class="key black" onclick="display('9')">9</button>
+            <button class="key green" onclick="display('*')">x</button>
+            <button class="key black" onclick="display('4')">4</button>
+            <button class="key black" onclick="display('5')">5</button>
+            <button class="key black" onclick="display('6')">6</button>
+            <button class="key green" onclick="display('-')">-</button>
+            <button class="key black" onclick="display('1')">1</button>
+            <button class="key black" onclick="display('2')">2</button>
+            <button class="key black" onclick="display('3')">3</button>
+            <button class="key green" onclick="display('+')">+</button>
+            <button class="key black" ><sup>+</sup>/<sub>-</sub></button>
+            <button class="key black" onclick="display('0')">0</button>
+            <button class="key black" onclick="display('.')">.</button>
+            <button class="key green" onclick="evaluation()">=</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
