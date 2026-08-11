@@ -11,7 +11,6 @@ function display(value) {
 
 function evaluation() {
     const result = eval(exp);
-    console.log(result);
     calculations.innerText = result;
     exp = "0";
 }
